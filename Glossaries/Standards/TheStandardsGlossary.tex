@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\input{../../defaults/Packages.tex}
+\makenoidxglossaries
+
+\title{The Standards and Standard Setting Glossary}
+\author{Mirko Boehm\\
+  Chair of Innovation Economics\\
+  Technical University of Berlin\\
+  \texttt{mirko@fsfe.org}}
+%%% Use `git describe` to mark the latest release?
+\date{\today}
+
+\input{../../defaults/Glossary-Standards}
+\begin{document}
+
+\maketitle \thispagestyle{empty}
+\begin{abstract}
+  \noindent
+  Standards and standard setting are of great importance to government
+  and the private sector. It is also a complex field that has
+  developed it's own terminology and lingo. There is also not a lot of
+  consistency in how terms are used. Even fundamental terms like
+  \gls{std} are difficult to define. Let's make a common glossary for
+  them.
+\end{abstract}
+
+\clearpage
+\glsaddall
+\printnoidxglossary[type=\acronymtype,nonumberlist]
+\clearpage
+\printnoidxglossary[nonumberlist]
+% \clearpage
+% \bibliography{citeulike-mirkoboehm}
+\end{document}
+

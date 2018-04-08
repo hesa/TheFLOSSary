@@ -1,0 +1,27 @@
+.DS_Store
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.log
+*.out
+*.upa
+*.pdf
+*.dvi
+*.thm
+*.toc
+*.xdy
+*.nav
+*.snm
+*.synctex.gz
+_minted-presentation/
+# Emacs temporary files:
+*~

@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\input{../../common/Packages.tex}
+\makenoidxglossaries
+
+\title{{\em The FLOSSary}:\\
+  A Glossary af Free and Open Source Software related Terminology}
+
+\author{TheFLOSSary Contributors\\
+  \\
+  Editor: Mirko Boehm\\
+  Chair of Innovation Economics\\
+  Technical University of Berlin\\
+  \texttt{mirko@fsfe.org}}
+
+\date{\today}
+
+\input{../../Data/Glossary-FOSS}
+\begin{document}
+\newcommand{\flossary}{{\em FLOSSary} }
+
+\maketitle \thispagestyle{empty}
+\begin{abstract}
+  \noindent
+  The \flossary is a free glossary of terms and definitions related to
+  \gls{FLOSS}. It serves as a point of reference for the participants
+  in the ``Open Source and Intellectual Property in the Digital
+  Society'' the the Technical University of Berlin, and may be reused
+  in other contexts like papers or presentations.
+
+  The \flossary is
+  collectively edited by the participants and tutors of the course and
+  distributed freely under the conditions of the CC BY 4.0 license.
+\end{abstract}
+
+\clearpage
+\glsaddall
+\printnoidxglossary[nonumberlist]
+\clearpage
+\printnoidxglossary[type=\acronymtype,nonumberlist]
+\clearpage
+\bibliography{../../Data/Bibliography}
+\end{document}
+

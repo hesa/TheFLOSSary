@@ -1,0 +1,52 @@
+%%% A common glossary for standards and standard setting related terms.
+%%% (C) 2018, Mirko Boehm
+%%% License: CC-BY-SA 2.0
+%%%
+%%% For terms that are also acronyms, always reference the acronyms in
+%%% the document. Using the acronym will automatically reference the
+%%% glossary entry (if the acronym definition contains a \glsadd
+%%% statement).
+
+% Terms that need definition:
+% formal/informal standards, FRAND (and transparency of terms),
+% interoperability, disclosure (patents), procurement, mandating, SEP
+
+%%% See https://en.wikibooks.org/wiki/LaTeX/Glossary for syntax and
+%%% semantics.
+\usepackage{xparse}
+%%% A dual entry is an acronym that is also a defined term. It has an
+%%% acronyms entry and a glossary entry that cross-reference each
+%%% other.
+\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={#6},#1
+  }
+  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
+
+%%% Entries:
+\newdualentry{SSO}{SSO}{standards setting organization}{A standards
+  setting organization is an organization with the primary purpose to
+  produce or faciliate technical standards}
+
+\newdualentry{ISO}{ISO}{International Organization
+  for Standardization}{The International Organization
+  for Standardization is an international, independent,
+  non-governmental standard setting body that consists of delegates
+  from \glspl{NSB}, with headquarters in Geneva, Switzerland}
+
+\newglossaryentry{NSB} { name = {national standards body}, plural =
+  {national standards bodies}, description = {Countries nominate one
+    \gls{SSO} that represents them in \gls{ISO}. These appointed
+    \glspl{SSO} are referred to as national standards bodies. They
+    often have a special privileged relationship with their
+    country. For example, a treaty between the federal republic of
+    Germany and DIN declares DIN to be the national standards body of
+    Germany, and in turn obligates DIN to the public benefit, among
+    other terms}}
+
+\newglossaryentry{std} { name = {standard}, plural =
+  {standards}, description = {
+    A standard is a standard}
+}
+
