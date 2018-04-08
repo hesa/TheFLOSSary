@@ -1,6 +1,6 @@
 # The FLOSSary
 
-The FLOSSary is a free glossary of terms and definitions related to free/libre and open source software (FLOSS). It serves as a point of reference for the par- ticipants in the “Open Source and Intellectual Property in the Digital Society” the the Technical University of Berlin, and may be reused in other contexts like papers or presentations.
+The FLOSSary is a free glossary of terms and definitions related to free/libre and open source software (FLOSS). It serves as a point of reference for the participants in the “Open Source and Intellectual Property in the Digital Society” the the Technical University of Berlin, and may be reused in other contexts like papers or presentations.
 The FLOSSary is collectively edited by the participants and tutors of the course and distributed freely under the conditions of the CC BY 4.0 license.
 
 ## Creating the FLOSSary PDF file
