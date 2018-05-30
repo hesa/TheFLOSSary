@@ -23,33 +23,75 @@
 \newglossaryentry{KDE}{name={KDE}, description={KDE is a recursive
     acronym that refers to the ``K Desktop Environment'', a graphical
     computing environment for free software operating systems. It is
-    produced by the KDE community, a global, volunteer driven and
-    decentralised \gls{FLOSS} community} }
+    produced by the KDE community\footnote{\url{https://www.kde.org}},
+    a global, volunteer driven and decentralized \gls{FOSS} community}
+}
 
 \newglossaryentry{CoC}{name={code of conduct}, description={A code of
     conduct describes the behavioral norms and rules that community
     contributors are expected to adhere to } }
 
+\newglossaryentry{osw}{name={open source way}, description={The
+    colloquial term ``the open source way'' describes the mutual
+    understanding of \gls{SF}, values and principles applied by the
+    \gls{WOSC}, especially the norms of non-negotiable \gls{OS}
+    licenses, open governance and meritocracy}}
+
+\newglossaryentry{WOSC}{name={wider Open Source community}, description={The
+  phrase \emph{wider Open Source community} is commonly used to describe the
+  totality of individuals, smaller and larger communities, umbrella
+  organizations and entities collaborating on developing the commons of
+  \gls{FOSS} in the global upstream/downstream model} }
+
+\newglossaryentry{osc}{
+  name={open source culture},
+  description={A synonym for the \gls{osw}}
+}
+
+\newglossaryentry{LD}{ name={Linux distribution}, description={A Linux
+    distribution is a software collection based on Linux that aggregates the
+    work of the \gls{WOSC} into a complete operating system. Linux distributions
+    are an integral part of the \gls{UDM} because they make \gls{FS} accessible
+    for specific applications like end-user desktops or embedded systems} }
+
+\newglossaryentry{UDM}{name={upstream/downstream model}, description={The
+  analogy of the upstream/downstream model uses the mental image of a large
+  river that collects the water from many smaller and smaller tributaries (the
+  communities) and delivers it to the ocean (the users). Key tenets of the
+  upstream/downstream model are the non-negotiability of the \gls{FS} licensing
+  terms and community governance norms} }
+
+\newglossaryentry{LF}{ name={Linux Foundation}, description={The Linux
+    Foundation is a not-for-profit industry association (US 501(c)(6)) dedicated
+    to building sustainable ecosystems around open source projects to accelerate
+    technology development and commercial adoption}}
+
 \newglossaryentry{CWG}{name={community working group},
   description={The community working group of KDE is the only formal
-    conflict resolution mechanism the community has in place. ``The
+    conflict resolution mechanism the KDE community has in place. ``The
     long-term goal of the Community Working Group is to help to
     maintain a friendly and welcoming KDE community, thereby ensuring
     KDE remains a great project enjoyed by all contributors and
-    users.''\footnote{https://ev.kde.org/workinggroups/cwg.php} } }
+    users.''\footnote{\url{https://ev.kde.org/workinggroups/cwg.php}} } }
 
-\newglossaryentry{eV}{name={KDE e.V.}, description={KDE
-    e.V.\footnote{https://ev.kde.org/} is a non-profit organization
+\newglossaryentry{EF}{ name={Eclipse Foundation}, description={The Eclipse
+    Foundation is a not-for-profit industry association (US 501(c)(6)) that
+    provides a global community of individuals and organizations with a mature,
+    scalable, and commercially focused environment for collaboration and
+    innovation} }
+
+\newglossaryentry{eV}{name={KDE~e.V.}, description={KDE
+    e.V.\footnote{\url{https://ev.kde.org/}} is a non-profit organization
     registered in Berlin, Germany that represents the KDE Community in
     legal and financial matters } }
 
 \newglossaryentry{FSFE}{name={FSFE}, description={The Free Software
     Foundation Europe ``is a charity that empowers users to control
-    technology.''\footnote{https://fsfe.org/about/about.en.html}} }
+    technology.''\footnote{\url{https://fsfe.org/about/about.en.html}}} }
 
 \newglossaryentry{FSF}{name={FSF}, description={``The Free Software
     Foundation (FSF) is a nonprofit with a worldwide mission to
-    promote computer user freedom.''\footnote{http://www.fsf.org/}} }
+    promote computer user freedom.''\footnote{\url{http://www.fsf.org/}}} }
 
 \newglossaryentry{FS}{name={free software}, description={Free software
     is made available to everybody under a license that gives the user
@@ -57,8 +99,8 @@
     the software. ``'free software' is a matter of liberty, not
     price''.\cite{RMS_essays_2010} The \gls{FSF} and the \gls{OSI}
     maintain lists of
-    licenses\footnote{https://www.gnu.org/licenses/license-list.html,
-      https://opensource.org/licenses} that provide those ``four
+    licenses\footnote{\url{https://www.gnu.org/licenses/license-list.html},
+      \url{https://opensource.org/licenses}} that provide those ``four
     essential freedoms'' to recipients of the software. The terms of
     all licenses that provide these terms turn the product into a
     common good, and also ensure that the product itself will continue
@@ -72,7 +114,7 @@
     legally, as well as educate companies to understand how the GPL
     works.  As needed, the purpose of the group will also include
     enforcement in the case of licence
-    violations.''\footnote{http://mail.fsfeurope.org/pipermail/press-release/2006q4/000159.html}
+    violations.''\footnote{\url{http://mail.fsfeurope.org/pipermail/press-release/2006q4/000159.html}}
     The Freedom Task Force was created in 2006 } }
 
 \newglossaryentry{LN}{name={Legal Network}, description={The
@@ -81,14 +123,16 @@
     different fields involved in Free Software legal issues. Currently
     the Legal Network has over 400 participants from different legal
     systems, academic backgrounds and
-    affiliations.''\footnote{https://fsfe.org/activities/ftf/ln.en.html}
+    affiliations.''\footnote{\url{https://fsfe.org/activities/ftf/ln.en.html}}
 } }
 
 \newglossaryentry{OS}{name={open source}, description={The term ``open
-    source'' is used in this paper as a synonym to \gls{FS}}, see={FS} }
+    source'' is used in this paper as a synonym to \gls{FS}. It
+    originally describes a campaign to promote \gls{FS} to
+    business.\cite{perens-2017}}, see={FS} }
 
 \newglossaryentry{OSI}{name={Open Source Initiative}, description={The
-    Open Source Initiative\footnote{https://opensource.org} was
+    Open Source Initiative\footnote{\url{https://opensource.org}} was
     founded in 1998 by Eric Raymond and Bruce Perens. It is dedicated
     to the promotion of open source software. The term ``open source''
     was coined by the initiative's founders. It created the initial
@@ -100,15 +144,25 @@
     The The Open Source Initiative is a California public benefit
     corporation, with 501(c)3 tax-exempt status} }
 
-\newglossaryentry{OSD}{name={Open Source Definition}, description={The
-    Open Source Definition formulates the terms software must comply
-    with to be considered
-    \gls{FLOSS}.\footnote{\url{https://opensource.org/osd}} It is
+\newglossaryentry{OSI}{name={Open Source Initiative}, description={The Open
+    Source Initiative\footnote{https://opensource.org} was founded in 1998 by
+    Eric Raymond and Bruce Perens. It is dedicated to the promotion of open
+    source software. The term ``open source'' was coined by the initiative's
+    founders. It created the initial \gls{OSD}. Today the Open Source
+    Initiative is the steward stewards of the Open Source Definition (OSD) and the
+    community-recognized body for reviewing and approving licenses as
+    OSD-conformant. It publishes the list of all approved open source
+    licenses.\footnote{\url{https://opensource.org/licenses/alphabetical}} The
+    The Open Source Initiative is a California public benefit corporation, with
+    501(c)3 tax-exempt status} }
+
+\newglossaryentry{OSD}{name={Open Source Definition}, description={The Open
+    Source Definition formulates the terms software must comply with to be
+    considered \gls{FOSS}.\footnote{\url{https://opensource.org/osd}} It is
     maintained by the \gls{OSI}. By way of the Open Source Definition,
-    especially it's unanimous acceptance, the term ``open source''
-    gained a precise meaning across the wider \gls{FLOSS} community,
-    and is therefore a term of art and part of open source culture}
-}
+    especially it's unanimous acceptance, the term ``open source'' gained a
+    precise meaning across the wider \gls{FOSS} community, and is therefore a
+    term of art and part of open source culture}}
 
 \newglossaryentry{SF}{name={software freedom}, description={``Software
     freedom'' is what distributing a work under a \gls{FLOSS} license
@@ -117,26 +171,26 @@
     goal elements of the \gls{FS} movement aim for. It can be
     circumscribed as the absence of coercion to use proprietary
     software.\cite{RMS_essays_2010} Organisations like the Software
-    Freedom Conservancy\footnote{https://sfconservancy.org/} and the
+    Freedom Conservancy\footnote{\url{https://sfconservancy.org/}} and the
     Software Freedom Law
-    Center\footnote{https://www.softwarefreedom.org/} work to advance
+    Center\footnote{\url{https://www.softwarefreedom.org/}} work to advance
     software freedom} }
 
 \newglossaryentry{WM}{name={Wikimedia}, description={Wikimedia is the
     global community that creates \gls{WP}}}
 
 \newglossaryentry{WMF}{name={Wikimedia Foundation}, description={The
-    Wikimedia Foundation is a San Franscisco based non-profit
-    organisation that represents Wikipedia globally\todo{improve} } }
+    Wikimedia Foundation is a US-based non-profit
+    organisation that represents Wikipedia globally} }
 
 \newglossaryentry{WMDE}{name={Wikimedia Deutschland e.V.},
   description={Wikimedia Deutschland e.V.  is a non-profit
     organization registered in Berlin, Germany that represents the
-    German language Wikipedia\todo{improve} } }
+    German language Wikipedia community } }
 
 \newglossaryentry{WP}{name={Wikipedia}, description={Wikipedia is an
     online encyclopedia that aims at making the knowledge of the world
-    available to everybody\todo{improve} } }
+    available to everybody} }
 
 \newglossaryentry{VS}{name={versioning}, description={Versioning of
 software is the unique naming of software identifying it's development.
@@ -200,6 +254,27 @@ For example, version 1.0 is commonly used to identify a first edition.} }
  }
 }
 
+\newglossaryentry{PND}{name={permanent-non-differentiating
+    cooperation}, description={Permanent-non-differentiating
+    cooperation is a collaboration model facilitated by \gls{FOSS}
+    foundations that enables otherwise competing market actors to
+    continuously cooperate to develop a common software stack that
+    serves as basic, non-differentiating technology prerequisite to
+    products that combine free and proprietary software. In contrast to
+    pre-competitive cooperation on the development of proprietary,
+    differentiating products, anti-trust concerns are not relevant in
+    the permanent-non-differentiating cooperation model since
+    collusion is impossible if the results are immediately available
+    to the general public and the development process is generally
+    open for participation by all interested stakeholders} }
+
+
+\newglossaryentry{ICT}{name={ICT}, description={``Information and
+    communication technology'' describes the computing and
+    telecommunications industry sector. The sector serves the
+    information processing, storage and networking demand of the
+    digital economy } }
+
 \newglossaryentry{OI}{name={open innovation}, description={A business
     concept which encourages companies to acquire outside sources of
     innovation in order to improve product lines and shorten the time
@@ -208,3 +283,4 @@ For example, version 1.0 is commonly used to identify a first edition.} }
    \footnote{\url{http://www.businessdictionary.com/definition/open-innovation.html}}
  }
 }
+
