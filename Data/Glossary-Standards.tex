@@ -17,17 +17,16 @@
 %%% A dual entry is an acronym that is also a defined term. It has an
 %%% acronyms entry and a glossary entry that cross-reference each
 %%% other.
-\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
-  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
-    description={#6},#1
-  }
-  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
-}
+
+%%% Acronyms:
+\newacronym[see={SDO}]{SSO}{SSO}{standards setting organization}
 
 %%% Entries:
-\newdualentry{SSO}{SSO}{standards setting organization}{A standards
-  setting organization is an organization with the primary purpose to
-  produce or faciliate technical standards}
+\newdualentry{SDO}{SDO}{standards development organization}{A
+  standards development organization is an entity whose primary
+  activities are developing, coordinating, promulgating, revising,
+  amending, reissuing, interpreting or otherwise maintaining standards
+  that address the interests of a wide base of users}
 
 \newdualentry{ISO}{ISO}{International Organization
   for Standardization}{The International Organization
@@ -45,8 +44,10 @@
     Germany, and in turn obligates DIN to the public benefit, among
     other terms}}
 
-\newglossaryentry{std} { name = {standard}, plural =
-  {standards}, description = {
-    A standard is a standard}
-}
+\newglossaryentry{std} { name = {standard}, plural = {standards},
+  description = {a document established by consensus and approved by a
+    recognized body, that provides, for common and repeated use,
+    rules, guidelines or characteristics for activities or their
+    results, aimed at the achievement of the optimum degree of order
+    in a given context (EN 45020:2006)} }
 
