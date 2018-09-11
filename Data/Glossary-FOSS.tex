@@ -4,12 +4,10 @@
 % license compliance
 % license compatibility,
 % inbound/outbound license
-% governance
 % four freedoms of software
 % share-alike/reciprocal/copyleft/permissive/academic
 % viral effect
 % tivoization
-% FLOSS/FOSS/OSS
 % freedom to operate (ability to exercise 4 freedoms and to pursue own interest)
 % automatic licensing
 % transitive licensing
@@ -59,7 +57,7 @@
   phrase \emph{wider Open Source community} is commonly used to describe the
   totality of individuals, smaller and larger communities, umbrella
   organizations and entities collaborating on developing the commons of
-  \gls{FOSS} in the global upstream/downstream model} }
+  \gls{FOSS} in the global \gls{UDM}} }
 
 \newglossaryentry{OSC}{name={community}, description={A \gls{FOSS}
     community produces information goods, predominantly computer
@@ -150,7 +148,7 @@
 } }
 
 \newglossaryentry{OS}{name={open source}, description={The term ``open
-    source'' is used in this paper as a synonym to \gls{FS}. It
+    source'' is used in this paper as a synonym to \gls{FOSS}. It
     originally describes a campaign to promote \gls{FS} to
     business.\cite{perens-2017}}, see={FS} }
 
@@ -207,15 +205,15 @@
 software is the unique naming of software identifying it's development.
 For example, version 1.0 is commonly used to identify a first edition.} }
 
-\newglossaryentry{DSC}{name={debain social contract},
+\newglossaryentry{DSC}{name={debian social contract},
   description={``Debian social contract'' refers to Debian systems'
-    commitment towards the free software community. The DBS is their
-    'moral agenda' which is based on the Debian Free Software
-    Guidlines according to which Debian promises to: by entirely
-    free;provide the best work; will not try to cover problems; give
-    priority to users and free software; make iot possible for the
-    software to be used with non-free
-    software\footnote{\url{https://www.debian.org/social_contract/}} }
+    commitment towards the \gls{FS} community. The DBS is a 'moral
+    agenda' which is based on the Debian Free Software Guidlines
+    according to which Debian promises to: be entirely free; provide
+    the best work; will not try to cover problems; give priority to
+    users and free software; make it possible for the software to be
+    used with non-free
+    software\footnote{\url{https://www.debian.org/social_contract}} }
 }
 
 \newglossaryentry{DRM}{name={DRM}, description={Digital Rights
@@ -231,19 +229,20 @@ For example, version 1.0 is commonly used to identify a first edition.} }
     \footnote{\url{https://www.eff.org/issues/drm}}
   } }
 
-\newglossaryentry{RE}{name={Reverse Engineering}, description={Reverse
-    engineering is taking apart an object to see how it works in order
-    to duplicate or enhance the object.  The practice, taken from
-    older industries, is now frequently used on computer hardware and
-    software. Software reverse engineering involves reversing a
-    program's machine code (the string of 0s and 1s that are sent to
-    the logic processor) back into the source code that it was written
-    in, using program language statements.
-\footnote{\url{https://en.wikipedia.org/wiki/Reverse_engineering}}
-\footnote{\url{https://searchsoftwarequality.techtarget.com/definition/reverse-engineering}}
-} }
+%%% Removed as not FOSS related:
+%% \newglossaryentry{RE}{name={Reverse Engineering}, description={Reverse
+%%     engineering is taking apart an object to see how it works in order
+%%     to duplicate or enhance the object.  The practice, taken from
+%%     older industries, is now frequently used on computer hardware and
+%%     software. Software reverse engineering involves reversing a
+%%     program's machine code (the string of 0s and 1s that are sent to
+%%     the logic processor) back into the source code that it was written
+%%     in, using program language statements.
+%% \footnote{\url{https://en.wikipedia.org/wiki/Reverse_engineering}}
+%% \footnote{\url{https://searchsoftwarequality.techtarget.com/definition/reverse-engineering}}
+%% } }
 
-\newglossaryentry{GIT}{name={git}, description={git is open source
+\newglossaryentry{GIT}{name={Git}, description={Git is open source
     software used for distributed versioning of files.  It was
     invented in 2005 by Linus Torvald, who is also the creator of the
     Linux kernel} }
@@ -251,34 +250,36 @@ For example, version 1.0 is commonly used to identify a first edition.} }
 \newglossaryentry{SC}{name={source code}, description={Source code is
     the fundamental component of a computer program that is created by
     a programmer and is referred to as the "before" versions of a
-    compiled computer program.
-    \footnote{\url{https://searchmicroservices.techtarget.com/definition/source-code}}
+    compiled computer
+    program\footnote{\url{https://searchmicroservices.techtarget.com/definition/source-code}}
 } }
 
-\newglossaryentry{CM}{name={committer}, description={Committers are
-    the community's quality control experts. Somebody has to control
-    the process.  Committers actually decide what changes, based on
-    community experience, make it into the originally licensed
-    program.  A committer is an individual who is able to modify the
-    source code of a particular piece of open-source software.
-   \footnote{\url{https://www.techrepublic.com/blog/10-things/10-terms-and-concepts-related-to-open-source/}}
- }
-}
+%%% Commented because the description is incorrect:
+%% \newglossaryentry{CM}{name={committer}, description={Committers are
+%%     the community's quality control experts. Somebody has to control
+%%     the process.  Committers actually decide what changes, based on
+%%     community experience, make it into the originally licensed
+%%     program.  A committer is an individual who is able to modify the
+%%     source code of a particular piece of open-source software.
+%%    \footnote{\url{https://www.techrepublic.com/blog/10-things/10-terms-and-concepts-related-to-open-source/}}
+%%  }
+%% }
 
-\newglossaryentry{PND}{name={permanent-non-differentiating
-    cooperation}, description={Permanent-non-differentiating
-    cooperation is a collaboration model facilitated by \gls{FOSS}
-    foundations that enables otherwise competing market actors to
-    continuously cooperate to develop a common software stack that
-    serves as basic, non-differentiating technology prerequisite to
-    products that combine free and proprietary software. In contrast to
+\newglossaryentry{CND}{name={continuous-non-differentiating
+    cooperation}, description={Continuous-non-differentiating
+    cooperation is a collaboration model implemented in \gls{FOSS}
+    communities and facilitated by \gls{FOSS} foundations that enables
+    otherwise competing market actors to continuously cooperate to
+    develop a common software stack that serves as basic,
+    non-differentiating technology prerequisite to products that
+    combine free and proprietary software. In contrast to
     pre-competitive cooperation on the development of proprietary,
     differentiating products, anti-trust concerns are not relevant in
-    the permanent-non-differentiating cooperation model since
+    the continous-non-differentiating cooperation model since
     collusion is impossible if the results are immediately available
     to the general public and the development process is generally
-    open for participation by all interested stakeholders} }
-
+    open for participation and forking by all interested stakeholders}
+}
 
 \newglossaryentry{ICT}{name={ICT}, description={``Information and
     communication technology'' describes the computing and
@@ -290,10 +291,9 @@ For example, version 1.0 is commonly used to identify a first edition.} }
     concept which encourages companies to acquire outside sources of
     innovation in order to improve product lines and shorten the time
     required to bring products to market or to release internally
-    developed innovation.
-   \footnote{\url{http://www.businessdictionary.com/definition/open-innovation.html}}
- }
-}
+    developed
+    innovation\footnote{\url{http://www.businessdictionary.com/definition/open-innovation.html}}
+} }
 
 \newglossaryentry{physicalgoods}{name={physical goods},
   description={Physical goods require at least a combination of labor
@@ -306,4 +306,18 @@ For example, version 1.0 is commonly used to identify a first edition.} }
     incur negligible cost of reproduction. Assuming marginal cost
     pricing, the price of an information good converges to zero under
     perfect competition} }
+
+\newglossaryentry{sstack}{name={software stack}, description={Computer
+    systems consist of multiple layers of subsystems that together
+    provide a platform that applications run on. Lower parts of the
+    stack are usually less differentiating and typically
+    \gls{FOSS}. Some stack are so common that they have names, like
+    the LAMP (Linux, Apache, MySQL, PHP) stack} }
+
+\newglossaryentry{commodity}{name={commodity}, description={A
+    commodity is a good with normalized attributes, giving instances
+    of it fungibility. Commodities commonly are produced under price
+    competition. \Gls{FOSS} that implements common,
+    non-differentiating features of a computer system is considered a
+    commodity} }
 
