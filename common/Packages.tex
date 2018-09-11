@@ -20,5 +20,24 @@
 \usepackage[toc,xindy,acronym]{glossaries}
 \usepackage{tikz}
 \usepackage{pgfplots}
+
+%%% Use this as \newdualentry{symbol}{acronym}{full text}{description}:
+\providecommand\newdualentry{}
+\renewcommand*{\newdualentry}[5][]{%
+  \newglossaryentry{main-#2}{name={#4},%
+  text={#3\glsadd{#2}},%
+  description={{#5}},%
+  #1
+  }%
+  \newglossaryentry{#2}{%
+  type=\acronymtype,%
+  first={#4 (#3)},%
+  firstplural={#4\glspluralsuffix{} (\glsentryname{#2}\glspluralsuffix)},%
+  name={#3\glsadd{main-#2}},%
+  description={\glslink{main-#2}{#4}}%
+  }%
+}
+
 % \makeglossaries
 \bibliographystyle{amsplain}
+
