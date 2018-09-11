@@ -17,8 +17,14 @@
 % enforcement of licensing terms
 
 \newacronym[see={FOSS}]{FLOSS}{FLOSS}{free/libre and open source software}
-\newacronym{FOSS}{FOSS}{free and open source software}
+\newacronym[see={FOSS}]{OSS}{OSS}{open source software}
 \newacronym{GA}{GA}{general assembly}
+
+\newdualentry{FOSS}{FOSS}{free and open source software}{The term free
+  and open source software refers to software that is distributed
+  under a license which complies with the \gls{OSD}. The \gls{OSI} is
+  the steward that approves licenses for being compliant with this
+  definition}
 
 \newglossaryentry{KDE}{name={KDE}, description={KDE is a recursive
     acronym that refers to the ``K Desktop Environment'', a graphical
@@ -27,22 +33,38 @@
     a global, volunteer driven and decentralized \gls{FOSS} community}
 }
 
+\newglossaryentry{governance}{name={governance}, description={In the
+    context of \gls{FOSS}, governance describes the totality of
+    implicit and explicit behavioral norms, codes and processes that
+    regulate the relationship between contributors and the community
+    as a whole} }
+
 \newglossaryentry{CoC}{name={code of conduct}, description={A code of
     conduct describes the behavioral norms and rules that community
     contributors are expected to adhere to. Once adopted, a code of
-    conduct is part of the explicit governance norms of a community} }
+    conduct is part of the explicit \gls{governance} norms of a community} }
 
 \newglossaryentry{osw}{name={open source way}, description={The
     colloquial term ``the open source way'' describes the mutual
     understanding of \gls{SF}, values and principles applied by the
     \gls{WOSC}, especially the norms of non-negotiable \gls{OS}
-    licenses, open governance and meritocracy}}
+    licenses, open governance and \gls{meritocracy}}}
+
+\newglossaryentry{meritocracy}{name={meritocracy}, description={In the
+    context of \gls{FOSS}, the term meritocracy is used to describe a
+    system where contributors gain reputation in a community solely
+    based on the value of the contributions they make} }
 
 \newglossaryentry{WOSC}{name={wider Open Source community}, description={The
   phrase \emph{wider Open Source community} is commonly used to describe the
   totality of individuals, smaller and larger communities, umbrella
   organizations and entities collaborating on developing the commons of
   \gls{FOSS} in the global upstream/downstream model} }
+
+\newglossaryentry{OSC}{name={community}, description={A \gls{FOSS}
+    community produces information goods, predominantly computer
+    programs, in a collaborative process based on voluntary
+    participation} }
 
 \newglossaryentry{osc}{
   name={open source culture},
@@ -224,7 +246,7 @@ For example, version 1.0 is commonly used to identify a first edition.} }
 \newglossaryentry{GIT}{name={git}, description={git is open source
     software used for distributed versioning of files.  It was
     invented in 2005 by Linus Torvald, who is also the creator of the
-    Linux kernel.  } }
+    Linux kernel} }
 
 \newglossaryentry{SC}{name={source code}, description={Source code is
     the fundamental component of a computer program that is created by
@@ -272,4 +294,16 @@ For example, version 1.0 is commonly used to identify a first edition.} }
    \footnote{\url{http://www.businessdictionary.com/definition/open-innovation.html}}
  }
 }
+
+\newglossaryentry{physicalgoods}{name={physical goods},
+  description={Physical goods require at least a combination of labor
+    and materials to build. Assuming marginal cost pricing, the price
+    of a physical good is affected by the factors required for its
+    production, and therefore larger than zero} }
+
+\newglossaryentry{infogoods}{name={information goods},
+  description={Information goods are expensive to create, but only
+    incur negligible cost of reproduction. Assuming marginal cost
+    pricing, the price of an information good converges to zero under
+    perfect competition} }
 
