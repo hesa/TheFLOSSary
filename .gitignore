@@ -23,5 +23,11 @@
 *.snm
 *.synctex.gz
 _minted-presentation/
+# VSCode data:
+.vscode/
+# generated files:
+Glossaries/TheFLOSSary/contributors.tex
 # Emacs temporary files:
 *~
+# Python temporary files:
+__pycache__
