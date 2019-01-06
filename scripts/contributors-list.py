@@ -32,4 +32,5 @@ def unify_contributors(committers):
 results = run_or_die('git log --pretty="%an"', "Unable to query list of Git committers.")
 committers = results[0].decode().split('\n') # convert bytes to unicode before breaking lines
 contributors = ', '.join(unify_contributors(committers))
-print(utf8tolatex(contributors))
+ltxoutput = '{}.'.format(utf8tolatex(contributors))
+print(ltxoutput)
