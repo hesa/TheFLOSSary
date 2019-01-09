@@ -23,7 +23,7 @@
 \newacronym{fsry:ODF}{OpenDocument}{Open Document Format for Office Applications}
 \newacronym{fsry:WIPO}{WIPO}{World Intellectual Property Organization}
 
-\newdualentry{fsry:FOSS}{FOSS}{free and open source software}{The term free
+\dualfsryentry{FOSS}{FOSS}{free and open source software}{The term free
   and open source software refers to software that is distributed
   under a license which complies with the \gls{fsry:OSD}. The \gls{fsry:OSI} is
   the steward that approves licenses for being compliant with this
@@ -42,10 +42,11 @@
     regulate the relationship between contributors and the community
     as a whole.} }
 
-\newglossaryentry{fsry:CoC}{name={code of conduct}, description={A code of
-    conduct describes the behavioral norms and rules that community
-    contributors are expected to adhere to. Once adopted, a code of
-    conduct is part of the explicit \gls{fsry:governance} norms of a community.} }
+\newglossaryentry{fsry:CoC}{name={code of conduct}, description={A
+    code of conduct describes the behavioral norms and rules that
+    community contributors are expected to adhere to. Once adopted, a
+    written code of conduct is part of the explicit
+    \gls{fsry:governance} norms of a community.} }
 
 \newglossaryentry{fsry:osw}{name={open source way}, description={The
     colloquial term ``the open source way'' describes the mutual
@@ -64,10 +65,14 @@
   organizations and entities collaborating on developing the commons of
   \gls{fsry:FOSS} in the global \gls{fsry:UDM}.} }
 
-\newglossaryentry{fsry:OSC}{name={community}, description={A \gls{fsry:FOSS}
-    community produces information goods, predominantly computer
-    programs, in a collaborative process based on voluntary
-    participation.} }
+\newglossaryentry{fsry:OSC}{name={community}, description={A
+    \gls{fsry:FOSS} community consists of the network of participants
+    that contribute to the creation of specific \gls{fsry:FOSS} software
+    products, predominantly computer programs, in a collaborative peer
+    productions process based on voluntary participation. Communities
+    may be organized as unincorporated associations, as for-profit or
+    not-for-profit legal entities or under \gls{fsry:FOSS}
+    \glspl{fsry:umbrellaorg}.} }
 
 \newglossaryentry{fsry:osc}{
   name={open source culture},
@@ -223,7 +228,7 @@
     \gls{fsry:OSD}.\footnote{\url{https://www.debian.org/social_contract}} }
 }
 
-\newdualentry{fsry:DRM}{DRM}{Digital Rights Management}{ A collection
+\dualfsryentry{DRM}{DRM}{Digital Rights Management}{ A collection
   of technologies that can be used to protect the copyright of
   electronic media including software and multimedia content. The way
   it is done mostly includes restricting the use of hardware and
@@ -336,7 +341,7 @@
     rights to all third parties to the source code of any
     modifications.} }
 
-\newdualentry{fsry:DMCA}{DMCA}{Digital Millennium Copyright Act}{ The
+\dualfsryentry{DMCA}{DMCA}{Digital Millennium Copyright Act}{ The
   Digital Millennium Copyright Act is a 1998 United States copyright
   law that implements two 1996 treaties of the \acrfull{fsry:WIPO}. It
   criminalizes production and dissemination of technology, devices, or
@@ -372,22 +377,25 @@
     receiver to forget it or to dispossess it. The process of
     knowledge transfer cannot be reversed.\cite{digirightmana}} }
 
-\newglossaryentry{fsry:contribuagree}{name={contribution agreement}, description={In the
-    \gls{fsry:FOSS} context, it is a legal document that specifies the conditions for transferring
-    the rights of using, reproducing, modifying, and distributing a product from
-    one entity to another\cite{civiccommons}. In this case, the author retains copyright
-    ownership, but grants perpetual, worldwide, irrevocable and no-charge
-    rights over his/her work to a project or foundation.\cite{hammouda2012open}}}
+\newglossaryentry{fsry:contribuagree}{name={contribution agreement},
+  description={In the \gls{fsry:FOSS} context, it is a legal document
+    that specifies the conditions for transferring the rights of
+    using, reproducing, modifying, and distributing a product from one
+    entity to another.\cite{civiccommons} In this case, the author
+    retains copyright ownership, but grants perpetual, worldwide,
+    irrevocable and no-charge rights over his/her work to a project or
+    foundation.\cite{hammouda2012open}}}
 
-\newglossaryentry{fsry:BDFL}{name={BDFL}, description={Short for Benevolent
-    Dictator For Life. BDFLs are rare in FOSS but they do exist. For
-    example, Guido van Rossum was the BDFL of Python and Dries
-    Buytaert is the BDFL of Drupal. A BDFL is typically the founder of
-    the project. They have final say in and can veto all decisions
-    related to the project, but it’s very rare that they use this
-    power. Typically a BDFL will lean on the Benevolent part of the
-    title by seeking consensus and always working toward what’s best
-    for both the project and its community.\cite{Brasseur.2018}} }
+\newglossaryentry{fsry:BDFL}{name={BDFL}, description={Short for
+    Benevolent Dictator For Life. BDFLs are rare in \gls{fsry:FOSS}
+    but they do exist. For example, Guido van Rossum was the BDFL of
+    Python and Dries Buytaert is the BDFL of Drupal. A BDFL is
+    typically the founder of the project. They have final say in and
+    can veto all decisions related to the project, but it’s very rare
+    that they use this power. Typically a BDFL will lean on the
+    Benevolent part of the title by seeking consensus and always
+    working toward what’s best for both the project and its
+    community.\cite{Brasseur.2018}} }
 
 \newglossaryentry{fsry:Modularity}{name=Modularity, description={Modularity
     is a property of a project referring to the extent to which it can
@@ -467,3 +475,9 @@ anyone.} }
     good is a good that is both non-excludable and non-rivalrous. The
     application of a \gls{fsry:FOSS} license makes software source code a
     public good } }
+
+\newglossaryentry{fsry:umbrellaorg} { name = {umbrella organization},
+  description = {An umbrella organization hosts individual projects
+    within a single administrative structure. The \gls{fsry:EF}, the
+    \gls{fsry:LF} and \gls{fsry:eV} are examples for umbrella organizations for
+    \gls{fsry:FOSS} projects} }
