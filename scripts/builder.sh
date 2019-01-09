@@ -14,4 +14,4 @@ fi
 PYTHONPATH=$PWD python ./scripts/contributors-list.py > Glossaries/TheFLOSSary/contributors.tex
 # This is mostly a reference to remember how to call latexmk on this repository:
 cd Glossaries/TheFLOSSary/ && \
-    latexmk -pdf -pvc -view=none -interaction=nonstopmode -synctex=1 -file-line-error $@
+    latexmk -pdf -pvc -view=none -interaction=nonstopmode -synctex=1 -file-line-error TheFLOSSary.tex $@
