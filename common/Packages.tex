@@ -1,6 +1,9 @@
 \usepackage{a4}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[hyphens]{url}
-\usepackage{hyperref}
+\usepackage{breakurl}
+\usepackage[breaklinks]{hyperref}
 \usepackage{chronology}
 \usepackage{array}
 \ifdefined\enabletodos
@@ -11,17 +14,15 @@
 \reversemarginpar
 \usepackage{placeins}
 \usepackage{soul}
-\usepackage{ccicons}
 \usepackage{MnSymbol,wasysym}
-\usepackage[T1]{fontenc}
 \usepackage{ntheorem}
 \theoremseparator{:}
 \newtheorem{hyp}{Hypothesis}
 \usepackage{acronym}
 \usepackage[toc,xindy,acronym,nopostdot]{glossaries}
-\usepackage{tikz}
-\usepackage{pgfplots}
+\usepackage{ccicons}
 \usepackage{lipsum}
+\usepackage[backend=biber,style=numeric,citestyle=numeric,doi=false,isbn=false,eprint=false]{biblatex}
 
 %%% Use this as \newdualentry{symbol}{acronym}{full text}{description}:
 \providecommand\dualfsryentry{}
@@ -40,5 +41,4 @@
   }%
 }
 
-\usepackage[backend=biber,style=numeric,citestyle=numeric]{biblatex}
 
