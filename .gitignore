@@ -22,6 +22,8 @@
 *.nav
 *.snm
 *.synctex.gz
+*.bcf
+*.run.xml
 _minted-presentation/
 # VSCode data:
 .vscode/
