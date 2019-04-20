@@ -17,7 +17,27 @@ The FLOSSary is edited using LaTeX. It builds with `latexmk`:
     > latexmk -pdf
 
 If everything works as expected, a file named *TheFLOSSary.pdf* should
-exist now.
+exist now. A builder script that watches the input files and
+continuously updates the PDF is located in the `scripts/`
+subdirectory:
+
+    > ./scripts/builder.sh
+	...
+
+## Required LaTeX installation
+
+Building the FLOSSary PDF requires a number of LaTeX packages. This
+examples lists the dependencies for Ubuntu systems:
+
+    > apt-get install -y python3 python3-pip \
+		texlive-full make python-pygments \
+		golang curl texlive-latex-extra latexmk texlive-bibtex-extra \
+		fonts-lmodern cm-super texlive-fonts-recommended texlive-fonts-extra \
+		xindy xpdf curl inotify-tools perl pandoc biber \
+		texlive-bibtex-extra git
+	...
+	>  pip3 install pylatexenc gitpython
+	...
 
 ## Using the FLOSSary in LaTeX documents
 
