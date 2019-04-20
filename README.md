@@ -63,9 +63,11 @@ To avoid changes in your own papers because of updated or added
 definitions in the FLOSSary, it may be useful to specify the concrete
 version of the FLOSSary used in the project. The authors aim at
 tagging a new version at the end of every semester, as for example in
-```v2018.10``` or ```v2019.04```. The FLOSSary Git repository can be
-included in a project as a submodule explicitly using one of these
-versions.
+```18.10``` or ```19.04``` (the naming scheme is borrowed from
+the
+[Ubuntu release schedule](https://en.wikipedia.org/wiki/Ubuntu_version_history). The
+FLOSSary Git repository can be included in a project as a submodule
+explicitly using one of these versions.
 
 ## Contributing
 
