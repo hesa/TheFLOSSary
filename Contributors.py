@@ -11,5 +11,6 @@ Contributors = {
     'Megha Karabylu Balaraju' : { 'Megha', 'kbmegha12@gmail.com' },
     'Pousali Chakraborty' : { 'Pousali' },
     'Esra Cabuk' : { 'esra_cabuk52' },
-    'Gordon Zsolt Gidófalvy' : { 'vista' }
+    'Gordon Zsolt Gidófalvy' : { 'vista' },
+    'Niklas Luis Wiedersich' : { 'niwie' }
 }
