@@ -1,0 +1,16 @@
+image: "mirkoboehm/latex_builder:latest"
+
+before_script:
+    - apt-get update -qq && apt-get install -y python3 python3-pip texlive-full make python-pygments golang curl texlive-latex-extra latexmk texlive-bibtex-extra fonts-lmodern cm-super texlive-fonts-recommended texlive-fonts-extra xindy xpdf curl inotify-tools perl pandoc biber texlive-bibtex-extra git
+    - pip3 install pylatexenc gitpython
+
+build:
+    script:
+        - PYTHONPATH=$PWD python3 ./scripts/contributors-list.py > Glossaries/TheFLOSSary/contributors.tex
+        - cd Glossaries/TheFLOSSary
+        - latexmk -pdf -interaction=nonstopmode -synctex=1 -file-line-error TheFLOSSary.tex
+    artifacts:
+      expose_as: 'The FLOSSary'
+      expire_in: 4 weeks
+      paths:
+      - Glossaries/TheFLOSSary/TheFLOSSary.pdf
