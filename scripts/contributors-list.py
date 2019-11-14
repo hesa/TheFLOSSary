@@ -28,9 +28,9 @@ def unify_contributors(committers):
         contributors.append(select_name(committer))
     return sorted(list(set(contributors))) # make sure entries are unique
 
-# main:
-results = run_or_die('git log --pretty="%an"', "Unable to query list of Git committers.")
-committers = results[0].decode().split('\n') # convert bytes to unicode before breaking lines
-contributors = ', '.join(unify_contributors(committers))
-ltxoutput = '{}.'.format(utf8tolatex(contributors))
-print(ltxoutput)
+if __name__ == "__main__":
+    results = run_or_die('git log --pretty="%an"', "Unable to query list of Git committers.")
+    committers = results[0].decode().split('\n') # convert bytes to unicode before breaking lines
+    contributors = ', '.join(unify_contributors(committers))
+    ltxoutput = '{}.'.format(utf8tolatex(contributors))
+    print(ltxoutput)

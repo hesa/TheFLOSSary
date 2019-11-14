@@ -16,28 +16,57 @@ The FLOSSary is edited using LaTeX. It builds with `latexmk`:
     > cd Glossaries/TheFLOSSary
     > latexmk -pdf
 
-If everything works as expected, a file named *TheFLOSSary.pdf* should
-exist now. A builder script that watches the input files and
-continuously updates the PDF is located in the `scripts/`
-subdirectory:
+When building the FLOSSary for the first time, it is necessary to create
+the *contributers.tex* file first. The file can be created using the
+*builder.sh* script located in the `scripts/` subdirectory (note that
+the file has to be executed from the root directory):
 
     > ./scripts/builder.sh
 	...
 
-## Required LaTeX installation
+If everything works as expected, a file named *TheFLOSSary.pdf* should
+exist now. The builder script also watches the input files and
+continuously updates the final PDF.
+
+## Prerequisites
+
+### Required LaTeX installation
 
 Building the FLOSSary PDF requires a number of LaTeX packages. This
-examples lists the dependencies for Ubuntu systems:
+example lists the dependencies for Ubuntu systems:
 
     > apt-get install -y python3 python3-pip \
 		texlive-full make python-pygments \
 		golang curl texlive-latex-extra latexmk texlive-bibtex-extra \
 		fonts-lmodern cm-super texlive-fonts-recommended texlive-fonts-extra \
-		xindy xpdf curl inotify-tools perl pandoc biber \
-		texlive-bibtex-extra git
-	...
-	>  pip3 install pylatexenc gitpython
-	...
+		xindy xpdf curl inotify-tools perl pandoc biber git
+
+
+### Minimum LaTeX installation (experimental)
+
+If you don't want to install the whole *texlive* environment (which
+is about 4.5 GB in size), you may install *texlive-basic* and only
+install the needed pacakges using *texliveonfly*:
+
+	> apt-get install -y python3 python3-pip \
+		texlive-base make python-pygments \
+		golang curl texlive-latex-recommended latexmk texlive-bibtex-extra \
+		fonts-lmodern cm-super texlive-fonts-recommended \
+		xindy xpdf curl inotify-tools perl pandoc biber git
+	> tlmgr init-usertree && tlmgr update --self && tlmgr update --all && \
+		tlmgr install texliveonfly
+
+*Note:* The builder-script will automatically run *texliveonfly*
+before running *latexmk*, if the *texliveonfly* command is availabe.
+So the build-process remains the same as described above.
+
+### Python Packages
+
+Python3 is required in order to successfully build the *contributers.tex*.
+The relevant python packages can be installed from the python package
+index using pip:
+
+	>  pip3 install -r requirements.pip
 
 ## Using the FLOSSary in LaTeX documents
 

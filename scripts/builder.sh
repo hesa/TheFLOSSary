@@ -12,6 +12,16 @@ fi
 
 # Generate the input file with the list of contributors:
 PYTHONPATH=$PWD python3 ./scripts/contributors-list.py > Glossaries/TheFLOSSary/contributors.tex
-# This is mostly a reference to remember how to call latexmk on this repository:
-cd Glossaries/TheFLOSSary/ && \
-    latexmk -pdf -pvc -view=none -interaction=nonstopmode -synctex=1 -file-line-error TheFLOSSary.tex $@
+
+if hash texliveonfly 2>/dev/null; then
+    cd Glossaries/TheFLOSSary/ && \
+    	texliveonfly -a "-view=none -interaction=nonstopmode -synctex=1 -file-line-error" \
+    	TheFLOSSary.tex && \
+    	latexmk -pdf -pvc -view=none -interaction=nonstopmode -synctex=1 \
+    	-file-line-error TheFLOSSary.tex $@
+else
+	# This is mostly a reference to remember how to call latexmk on this repository:
+	cd Glossaries/TheFLOSSary/ && \
+    	latexmk -pdf -pvc -view=none -interaction=nonstopmode -synctex=1 -file-line-error \
+    	TheFLOSSary.tex $@
+fi
