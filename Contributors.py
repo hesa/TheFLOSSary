@@ -12,5 +12,7 @@ Contributors = {
     'Pousali Chakraborty' : { 'Pousali' },
     'Esra Cabuk' : { 'esra_cabuk52' },
     'Gordon Zsolt Gidófalvy' : { 'vista' },
-    'Niklas Luis Wiedersich' : { 'niwie' }
+    'Niklas Luis Wiedersich' : { 'niwie' },
+    'Jan Martin Eichert' : { 'Jan' },
+    'Gergo Gömöri' : { 'gergogomori' }
 }
